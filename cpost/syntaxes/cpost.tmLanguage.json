@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "cpost",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"match": "\\b(type|titre|objet|contexte|corps|resultats|auteur)\\b",
+            	"name": "keyword.control.cpost"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"match": "#.*$",
+				"name": "comment.line.cpost"
+			}]
+		}
+	},
+	"scopeName": "source.cpost"
+}

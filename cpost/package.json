@@ -1,0 +1,30 @@
+{
+  "name": "cpost",
+  "displayName": ".cpost",
+  "description": "Highlighting for cpost files",
+  "version": "1.0.1",
+  "publisher": "Csquare",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Csquare-Interactive/cpost-vscode-extension.git"
+  },  
+  "contributes": {
+    "languages": [{
+      "id": "cpost",
+      "aliases": ["cpost", "cpost"],
+      "extensions": [".cpost"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cpost",
+      "scopeName": "source.cpost",
+      "path": "./syntaxes/cpost.tmLanguage.json"
+    }]
+  }
+}
